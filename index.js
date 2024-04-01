@@ -82,6 +82,7 @@ ScrollReveal().reveal('.info-sabari', {
     opacity: 0.8,
     origin: 'left'
 });
+
 ScrollReveal().reveal('.imgbox', {
     distance: '500px',
     opacity: 0.8,
@@ -89,6 +90,16 @@ ScrollReveal().reveal('.imgbox', {
 });
 ScrollReveal().reveal('.skill-card', {
     distance: '500px',
+    opacity: 0.8,
+    origin: 'bottom'
+});
+ScrollReveal().reveal('.font-weight-normal', {
+    distance: '500px',
+    opacity: 0.8,
+    origin: 'bottom'
+});
+ScrollReveal().reveal('.cardgrad1', {
+    distance: '100px',
     opacity: 0.8,
     origin: 'bottom'
 });

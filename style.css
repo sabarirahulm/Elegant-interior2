@@ -127,6 +127,9 @@ nav ul li a:hover::after{
 .about-head{
     display: none;
 }
+.about-div{
+    gap: 3rem !important
+}
 .about-col-2{
     flex-basis: 60%;
 }
@@ -222,13 +225,19 @@ nav ul li a:hover::after{
         transition: 1s;
     }
     .about-div{
-        display: block !important;
+        /* display: block !important; */
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
         width: 100% !important;
+        justify-content: center !important;
         transition: 1s;
     }
     .about-col-1{
         width: 70% !important;
+        justify-content: center !important;
     }
+    
     .vr{
         display:  none !important;
     }
