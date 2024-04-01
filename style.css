@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif !important;
+    box-sizing: border-box;
+}
+body{
+     /* background-color: rgb(3, 32, 44) !important;
+    color: white !important;  */
+}
+.dark-theme {
+    background-color: rgb(3, 32, 44) !important;
+    color: white !important;
+}
+h1{
+    font-weight: 650;
+    font-size: 3.5rem;
+}
+
+.logo{
+    font-size: 35px !important;
+    color: inherit !important;
+    margin-right: 0 !important;
+}
+.container1{
+    padding: 10px 10%;
+}
+.nav-container-fluid{
+    padding: 0 !important;
+}
+#S{
+    color: rgb(36, 138, 221);
+}
+nav{
+    position: sticky !important ;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    z-index: 3;
+    backdrop-filter: blur(50px);
+    padding: 10px 10% !important;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px 10px 10px !important;
+}
+
+nav ul li a{
+color: inherit !important;
+text-decoration: none;
+font-size: 18px;
+position: relative;
+font-weight: 510 !important;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.info-sabari{
+    font-size: clamp(2.0rem,1.0774rem + 0.7936vw, 0.625rem) !important;
+    font-weight: 500 !important;
+}
+.imgbox{
+    width: 35%;
+    padding:1.5rem;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    border-radius: 50% 70% ;
+}
+
+.imgbox img{
+    width: 100%;
+    border-radius: 20% 5% 20% 5%;
+}
+.imgbox:hover{
+    transform: scale(1.05) !important;
+    transition: 0.8s !important;
+}
+
+.header-text1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    width: 90%;
+}
+.name{
+    /* color:rgb(36, 138, 221) ; */
+    background-image: linear-gradient(-20deg, #4e41ff 0%, #21d4fd 100%); /* Your gradient colors */
+    -webkit-background-clip: text; /* Apply background clip to text */
+    color: transparent; /* Set text color to transparent */
+    text-fill-color: transparent;
+}
+.list-group-item{
+    background-color: inherit !important;
+}
+
+/* about */
+
+
+#about{
+    padding: 80px 0;
+}
+.about-col-1{
+    width: 30% ;
+    flex-basis: 30%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about-col-1 img:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+.about-head{
+    display: none;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 50px;
+}
+.edu{
+    font-size: 20px ;
+    font-weight: 500;
+    color: rgb(36, 138, 221) ;
+    font-family:'Poppins', sans-serif !important;
+}
+.card{
+    /* background-color:rgb(36, 138, 221) !important ; */
+    font-size: 18px !important;
+    
+}
+.cardgrad{
+    /* background-image: linear-gradient(rgb(36, 138, 221) , rgb(145, 35, 255) ) !important; */
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    color: inherit !important;
+    font-weight: 500 !important;
+    border: none !important;
+}
+.cardgrad .card-body .card-title{
+    font-weight: 500 !important;
+}
+.btn{
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%) !important;
+    border: none !important;
+}
+
+
+/* Skill */
+
+.skill-name{
+    color: black !important;
+    margin-top: 10px ;
+    margin-bottom: 0;
+}
+.card-1:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+/* Style for skill cards container */
+.skill-cards-container {
+    gap: 3rem; /* Adjust the gap between skill cards */
+}
+
+/* Style for individual skill card */
+.skill-card {
+    width: 150px; /* Set the width of the skill card */
+    height: 200px; /* Set the height of the skill card */
+
+}
+
+.skill-card:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+
+/* Style for skill card image */
+.skill-image {
+    max-width: 100px; /* Set the max-width of the skill image */
+    max-height: 100px; /* Set the max-height of the skill image */
+}
+
+/* Style for skill name */
+.skill-name {
+    text-align: center; /* Center align the skill name */
+}
+.darktheme2{
+    position: fixed;
+    right: 20px ;
+    top: 90vh;
+    width: 40px; 
+    height: 40px; 
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+/* contact */
+
+
+@media only screen and (max-width: 950px) {
+     #navbarNavAltMarkup{
+        justify-content: center !important;
+     }
+     .imgbox{
+        width: 70%;
+        transition: 1s;
+    }
+    .about-div{
+        display: block !important;
+        width: 100% !important;
+        transition: 1s;
+    }
+    .about-col-1{
+        width: 70% !important;
+    }
+    .vr{
+        display:  none !important;
+    }
+    .contact-left{
+        justify-content: center !important;
+    }
+    .about-head{
+        display: block;
+    }
+    .about-head2{
+        display: none;
+        text-align: center !important;
+    }
+    .skill-card {
+        width: 160px; /* Set the width of the skill card */
+        height: 200px; /* Set the height of the skill card */
+        transition: 1s;
+    }
+}
