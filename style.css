@@ -103,6 +103,10 @@ nav ul li a:hover::after{
 }
 .list-group-item{
     background-color: inherit !important;
+    color:  inherit !important;
+}
+#theme-toggler{
+    cursor: pointer;
 }
 
 /* about */
@@ -116,6 +120,11 @@ nav ul li a:hover::after{
     flex-basis: 30%;
 }
 
+.about-head2 p{
+    margin-top: -0px;
+    text-align: justify;
+}
+
 .about-col-1 img{
     width: 100%;
     border-radius: 10px;
@@ -127,9 +136,7 @@ nav ul li a:hover::after{
 .about-head{
     display: none;
 }
-.about-div{
-    gap: 3rem !important
-}
+
 .about-col-2{
     flex-basis: 60%;
 }
@@ -139,8 +146,12 @@ nav ul li a:hover::after{
 .edu{
     font-size: 20px ;
     font-weight: 500;
-    color: rgb(36, 138, 221) ;
+    color: inherit !important;
     font-family:'Poppins', sans-serif !important;
+}
+.edu:hover{
+    color: inherit !important ;
+    cursor: pointer;
 }
 .card{
     /* background-color:rgb(36, 138, 221) !important ; */
@@ -157,9 +168,15 @@ nav ul li a:hover::after{
 .cardgrad .card-body .card-title{
     font-weight: 500 !important;
 }
+.cardgrad .card-body .card-subtitle{
+    color:  inherit !important;
+}
 .btn{
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%) !important;
     border: none !important;
+}
+.nav-link.active {
+    color: rgb(36, 138, 221) !important;
 }
 
 
@@ -233,11 +250,13 @@ nav ul li a:hover::after{
         justify-content: center !important;
         transition: 1s;
     }
-    .about-col-1{
+    .about-col-1 {
         width: 70% !important;
         justify-content: center !important;
     }
-    
+    .about-div{
+        gap: 1rem !important
+    }
     .vr{
         display:  none !important;
     }
@@ -256,4 +275,12 @@ nav ul li a:hover::after{
         height: 200px; /* Set the height of the skill card */
         transition: 1s;
     }
+}
+@media only screen and (max-width: 450px) {
+.imgbox{
+    width: 90%;
+    padding:0.5rem;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    border-radius: 50% 70% ;
+}
 }
