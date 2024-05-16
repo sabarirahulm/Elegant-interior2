@@ -139,16 +139,6 @@ nav ul li a:hover::after{
     padding: 30px 20px 30px 25px ;
     border-radius: 15px 0px 0px 15px;
 }
-/* .darktheme2{
-    position: fixed;
-    right: 25px ;
-    top: 85vh;
-    width: 35px; 
-    height: 35px; 
-    background-color: white;
-    border-radius: 50%;
-    z-index: 3;
-} */
 
 .darktheme-div img{
     height: 30px;
@@ -164,7 +154,7 @@ nav ul li a:hover::after{
     top: 85vh;
     right: 0vh; 
     border-radius: 15px 0px 0px 15px;
-    padding: 10px;
+    padding: 10px 8px;
     border: none;
 }
 .social-icons-bg img{
