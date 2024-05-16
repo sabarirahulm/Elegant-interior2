@@ -14,7 +14,17 @@ function showTab(tabName) {
 
     document.getElementById(tabName).style.display = 'block';
 }
-
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.nav-link');
+  
+    links.forEach(link => {
+      link.addEventListener('click', function() {
+        links.forEach(item => item.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  });
+  
 const themeToggler = document.getElementById('theme-toggler');
 const body = document.body;
 
@@ -22,8 +32,8 @@ const body = document.body;
 function setTheme(theme) {
 body.classList.toggle('dark-theme', theme === 'dark'); // Apply the dark theme if theme is 'dark'
 const currentSrc = themeToggler.getAttribute('src');
-const lightThemeSrc = 'https://cdn-icons-png.freepik.com/512/6714/6714978.png';
-const darkThemeSrc = 'https://cdn-icons-png.freepik.com/256/12239/12239195.png';
+const lightThemeSrc = 'https://static.thenounproject.com/png/4157080-200.png';
+const darkThemeSrc = 'https://static.vecteezy.com/system/resources/previews/026/625/794/non_2x/light-mode-icon-symbol-design-illustration-vector.jpg';
 const newSrc = theme === 'dark' ? darkThemeSrc : lightThemeSrc;
 themeToggler.setAttribute('src', newSrc);
 }
@@ -34,7 +44,7 @@ const isDarkTheme = body.classList.contains('dark-theme');
 const theme = isDarkTheme ? 'light' : 'dark'; // Toggle theme between 'light' and 'dark'
 console.log('Toggling theme to:', theme); // Debugging statement
 localStorage.setItem('theme', theme); // Store the theme preference in local storage
-setTheme(theme); // Apply the theme
+setTheme(theme); // Apply the themehttps://static.thenounproject.com/png/4808961-200.png
 }
 
 // Check if a theme preference exists in local storage

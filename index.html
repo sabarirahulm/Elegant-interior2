@@ -32,31 +32,33 @@
         
         <ul class="collapse navbar-collapse nav justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav ">
-                <li><a class="nav-link mr-5" href="#">Home</a></li>
-                <li><a class="nav-link" href="#About">About</a></li>
-                <li><a class="nav-link" href="#Skills">Skills</a></li>
-                <li><a class="nav-link" href="#Project">Project</a></li>
-                <li><a class="nav-link" href="#Contact">Contact</a></li>
+              <li><a class="nav-link mr-5" href="#" id="home-link">Home</a></li>
+              <li><a class="nav-link" href="#About" id="about-link">About</a></li>
+              <li><a class="nav-link" href="#Skills" id="skills-link">Skills</a></li>
+              <li><a class="nav-link" href="#Project" id="project-link">Project</a></li>
+              <li><a class="nav-link" href="#Contact" id="contact-link">Contact</a></li>
             </div>
-        </ul>
-        
-        <img id="theme-toggler" src="https://cdn-icons-png.freepik.com/512/6714/6714978.png" class="darktheme2 card p-1"  alt="">
-        
+          </ul>
+          
+        <div class="darktheme-div card d-flex justify-content-center align-items-center ">
+        <img id="theme-toggler" src="./darkmode.png" class="darktheme2 card "  alt="theme button">
+        </div>
 
     </div>
 </nav>
 
 <div class="container1">
     <!-- Home -->
-    <div class="header-text1 d-flex flex-wrap-reverse justify-content-between mb-5 ">
-        <div class="info-sabari mt-3">
+    <div class="header-text1 d-flex flex-wrap-reverse justify-content-between pb-5">
+        <div class="info-sabari mt-3 mb-5">
             <h1>Hi ,I'm <br><span class="name">SABARI RAHUL <br></span></h1>
             <p>Web Developer</p>
-            <div class="social-icons">
-                <a href="https://linkedin.com/in/sabari-rahul-0369a221a" target="_blank"><img src="https://www.svgrepo.com/show/183624/linkedin.svg" style="width: 25px; height: 25px; margin-right: 5px;" alt=""></a>
-                <a href="https://github.com/sabarirahulm" target="_blank"><img src="https://www.svgrepo.com/show/331724/github-code-source.svg" style="width: 25px; height: 25px;margin-right: 5px" alt=""></a>
-                <a class="btn " href="Sabari rahul.pdf" role="button">Download CV</a>
+            <div class="social-icons d-flex align-items-end">
+                <a href="Sabari rahul.pdf" class="CV ps-4 pe-4"  role="button">Download CV <img src="https://www.freeiconspng.com/uploads/resume-icon-png-9.png" alt="github"> </a>
+                <a href="https://github.com/sabarirahulm" class="social-icons-bg" target="_blank"><img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="github"></a>
+                <a href="https://linkedin.com/in/sabari-rahul-0369a221a" class="social-icons-bg" target="_blank"><img src="https://i.pinimg.com/originals/86/32/54/863254f8c36146219554977cc345d584.png" alt="linkedin"></a>
             </div>
+            
         </div>
         <div class="imgbox">
             <img src="IMG_20220607_215541_734.jpg" alt="img">
@@ -280,27 +282,7 @@
                 <h1 class="sub-title text-center ">Contact</h1>
 
                 <div class="contact-left d-flex justify-content-around flex-wrap-reverse align-items-end">
-                <div class="footer py-3 bg-transparent mt-5">
-                    <div class=" text-center ">
-                        <p class="logo navbar-brand text-uppercase"><span id="S">S</span>abari Rahul.</p>
-                        <div class="social-icons mb-3">
-                            <a href="https://www.instagram.com/rahul.notie?igsh=Z3hsdnBueTFnbzU=" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" style="width: 25px; height: 25px;margin-right: 10px" alt=""></a>
-                            <a href="https://linkedin.com/in/sabari-rahul-0369a221a" target="_blank"><img src="https://www.svgrepo.com/show/183624/linkedin.svg" style="width: 25px; height: 25px; margin-right: 10px;" alt=""></a>
-                            <a href="https://github.com/sabarirahulm" target="_blank"><img src="https://www.svgrepo.com/show/331724/github-code-source.svg" style="width: 25px; height: 25px;margin-right: 5px" alt=""></a>
-                            
-                            
-                        </div>
-                      <span >© sabarirahul. All rigths reserved 2024</span>
-                    </div>
-                </div>
-
-                <div class="d-flex mt-5" style="height: 200px;">
-                    <div class="vr"></div>
-                  </div>
-                
-
                   <div class="col-md-12 mt-5" style="width: 25rem;">
-                    
                     
                     <form id="myForm" name="submit-to-google-sheet">
                         <div class="mb-3">
@@ -324,10 +306,37 @@
                 </div>
 
             </div>
+            
+        </div>
+    </div>
+        <div class="footer py-3 bg-transparent mt-5" style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;">
+            <div class=" text-center ">
+                <h1 class="logo navbar-brand text-uppercase"><span id="S">S</span>abari Rahul.</h1>
+                <div class="social-icons mb-3 d-flex justify-content-center">
+                    <a href="https://www.instagram.com/rahul.notie?igsh=Z3hsdnBueTFnbzU=" class="social-icons-bg" target="_blank"><img src="https://seeklogo.com/images/I/instagram-logo-A807AD378B-seeklogo.com.png" alt="github"></a>
+
+                    <a href="https://github.com/sabarirahulm" class="social-icons-bg" target="_blank"><img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="github"></a>
+
+                    <a href="https://linkedin.com/in/sabari-rahul-0369a221a" class="social-icons-bg" target="_blank"><img src="https://i.pinimg.com/originals/86/32/54/863254f8c36146219554977cc345d584.png" alt="linkedin"></a>
+                    
+                    
+                </div>
+              <span >© sabarirahul. All rigths reserved 2024</span>
+            </div>
+        </div>
+        <div class="social-icons-side d-flex flex-column justify-content-center align-items-center">
+            <a href="https://www.instagram.com/rahul.notie?igsh=Z3hsdnBueTFnbzU=" class="social-icons-bg-side" target="_blank"><img src="https://seeklogo.com/images/I/instagram-logo-A807AD378B-seeklogo.com.png" alt="github"></a>
+
+            <a href="https://linkedin.com/in/sabari-rahul-0369a221a" class="social-icons-bg-side" target="_blank"><img src="https://i.pinimg.com/originals/86/32/54/863254f8c36146219554977cc345d584.png" alt="linkedin"></a>
+
+            <a href="https://github.com/sabarirahulm" class="social-icons-bg-side" target="_blank"><img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="github"></a>
+
+            
+            
         </div>
         
 
-    </div>
+    
     </div>
 
     

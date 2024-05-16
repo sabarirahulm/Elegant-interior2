@@ -55,6 +55,10 @@ position: relative;
 font-weight: 510 !important;
 
 }
+nav ul li a.active {
+    color: rgb(36, 138, 221)e !important; 
+    border-bottom: 3px solid linear-gradient(to right, #00dbde 0%, #fc00ff 100%) !important;
+  }
 nav ul li a::after{
     content: '';
     width: 0;
@@ -108,6 +112,91 @@ nav ul li a:hover::after{
 #theme-toggler{
     cursor: pointer;
 }
+.social-icons-bg{
+    background-image: linear-gradient(-20deg, #4e41ff 0%, #21d4fd 100%);
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.social-icons-bg-side img{
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.social-icons-side{
+    background-image: linear-gradient(-20deg, #4e41ff 0%, #21d4fd 100%);
+    width: 40px;
+    position: absolute;
+    top: 40vh;
+    right: 0vh;
+    gap: 2rem;
+    padding: 30px 20px 30px 25px ;
+    border-radius: 15px 0px 0px 15px;
+}
+/* .darktheme2{
+    position: fixed;
+    right: 25px ;
+    top: 85vh;
+    width: 35px; 
+    height: 35px; 
+    background-color: white;
+    border-radius: 50%;
+    z-index: 3;
+} */
+
+.darktheme-div img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent !important; 
+    border-radius: 50%;
+}
+
+.darktheme-div{
+    background-image: linear-gradient(-20deg, #4e41ff 0%, #21d4fd 100%);
+    position: fixed;
+    top: 85vh;
+    right: 0vh; 
+    border-radius: 15px 0px 0px 15px;
+    padding: 10px;
+    border: none;
+}
+.social-icons-bg img{
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.social-icons{
+    gap: 1rem;
+}
+.CV img{
+    height: 22px;
+    width: 22px;
+    filter: invert(1);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 5px;
+    color: white !important;
+}
+.CV{
+    background-image: linear-gradient(-20deg, #4e41ff 0%, #21d4fd 100%);
+    border-radius: 5px;
+    height: 35px;
+    width: auto;
+    text-decoration: none !important;
+    color: white !important;
+    font-size: 15px;
+    padding: 7px;
+    text-align: center;
+}
 
 /* about */
 
@@ -142,7 +231,11 @@ nav ul li a:hover::after{
 }
 .sub-title{
     font-size: 50px;
+    font-weight: 600 !important;
+    color: inherit;
 }
+
+
 .edu{
     font-size: 20px ;
     font-weight: 500;
@@ -160,10 +253,11 @@ nav ul li a:hover::after{
 }
 .cardgrad{
     /* background-image: linear-gradient(rgb(36, 138, 221) , rgb(145, 35, 255) ) !important; */
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
     color: inherit !important;
     font-weight: 500 !important;
-    border: none !important;
+    background-color: inherit !important;
+    box-shadow: rgb(134, 176, 210) 0px 0px 0px 0.5px;
 }
 .cardgrad .card-body .card-title{
     font-weight: 500 !important;
@@ -173,10 +267,15 @@ nav ul li a:hover::after{
 }
 .btn{
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%) !important;
+    color: white !important;
     border: none !important;
 }
 .nav-link.active {
     color: rgb(36, 138, 221) !important;
+}
+.progress-bar{
+    font-weight: 700 !important;
+    font-size: 16px !important;
 }
 
 
@@ -204,8 +303,9 @@ nav ul li a:hover::after{
 }
 
 .skill-card:hover{
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
     transition: 0.8s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 /* Style for skill card image */
@@ -217,17 +317,6 @@ nav ul li a:hover::after{
 /* Style for skill name */
 .skill-name {
     text-align: center; /* Center align the skill name */
-}
-.darktheme2{
-    position: fixed;
-    right: 25px ;
-    top: 85vh;
-    width: 40px; 
-    height: 40px; 
-    margin-left: 15px;
-    background-color: white;
-    border-radius: 50%;
-    z-index: 3;
 }
 
 /* contact */
